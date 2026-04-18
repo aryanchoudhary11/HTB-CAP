@@ -32,7 +32,7 @@ The application exposed multiple functionalities:
 
 These features suggested backend interaction with system-level commands and stored scan results.
 
-
+![Initial Recon](screenshots/Screenshot%202026-04-18%20122257.png)
 
 ---
 
@@ -45,6 +45,8 @@ While interacting with the **Security Snapshot** feature, the application redire
 ```
 
 This indicated that scan results were indexed and accessible via an ID parameter.
+
+
 
 ---
 
