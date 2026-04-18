@@ -46,7 +46,7 @@ While interacting with the **Security Snapshot** feature, the application redire
 
 This indicated that scan results were indexed and accessible via an ID parameter.
 
-
+![Snapshot](screenshots/Screenshot%202026-04-18%20122731.png)
 
 ---
 
@@ -65,6 +65,8 @@ It was possible to access scan results belonging to other users.
 
 This confirmed an **Insecure Direct Object Reference (IDOR)** vulnerability, allowing unauthorized data access.
 
+![IDOR](screenshots/Screenshot%202026-04-18%20122749.png)
+
 ---
 
 ## 📦 Sensitive Data Exposure (PCAP Files)
@@ -78,6 +80,7 @@ During enumeration, it was discovered that:
 ```
 
 contained meaningful captured traffic.
+
 
 ---
 
@@ -96,6 +99,8 @@ Password: ********
 
 This demonstrated plaintext credential leakage over network traffic.
 
+![PCAP Analysis](screenshots/Screenshot%202026-04-18%20122811.png)
+
 ---
 
 ## 🔑 Credential Reuse
@@ -111,6 +116,8 @@ ssh nathan@<target_ip>
 The same password worked successfully, granting shell access.
 
 This confirmed **credential reuse across services**, a common real-world vulnerability.
+
+![Crdeential Reuse](screenshots/Screenshot%202026-04-18%20122904.png)
 
 ---
 
@@ -160,6 +167,7 @@ After privilege escalation:
 cd /root
 cat root.txt
 ```
+![Final Root Access](screenshots/Screenshot%202026-04-18%20122958.png)
 
 ---
 
